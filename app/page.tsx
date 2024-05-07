@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="w-max-screen overflow-x-hidden">
-      <div className="flex flex-col items-center justify-center min-h-screen ">
+      <div className="flex flex-col items-center justify-center min-h-[95vh] ">
         <header className="w-full py-4  bg-white">
           <nav className="flex h-20  items-center justify-between max-w-5xl px-4 mx-auto">
             <Image src={Logo} alt="logo" height={55} />
@@ -20,9 +20,15 @@ export default function Home() {
               <Button variant="ghost">
                 <Link href="#intro">Introduction</Link>
               </Button>
-              <Button variant="ghost">Team</Button>
-              <Button variant="ghost">Crowd Funding</Button>
-              <Button variant="ghost">Connect Us</Button>
+              <Button variant="ghost">
+                <Link href="#team">Team</Link>
+              </Button>
+              <Button variant="ghost">
+                <Link href="#funding">Crowd Funding</Link>
+              </Button>
+              <Button variant="ghost">
+                <Link href="#contact">Connect Us</Link>
+              </Button>
             </div>
           </nav>
         </header>
@@ -45,12 +51,56 @@ export default function Home() {
       </div>
       <div className="w-full flex flex-col items-center pt-20">
         <div id="intro">
-          <Image src={Content} width={1080} alt="content" />
+          <Image
+            src={Content}
+            alt="content"
+            sizes="56vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
         </div>
-        <Image src={TeamCeo} width={1080} alt="TeamCeo" />
-        <Image src={TeamDev} width={1080} alt="TeamDev" />
-        <Image src={TeamMarket} width={1080} alt="TeamMarket" />
-        <Image src={Contact} width={1080} alt="Contact" />
+        <div id="team">
+          <Image
+            src={TeamCeo}
+            alt="TeamCeo"
+            sizes="56vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
+          <Image
+            src={TeamDev}
+            alt="TeamDev"
+            sizes="56vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
+          <Image
+            src={TeamMarket}
+            alt="TeamDev"
+            sizes="56vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
+        </div>
+        <div id="contact">
+          <Image
+            src={Contact}
+            alt="Contact"
+            sizes="56vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
+        </div>
       </div>
     </div>
   );
