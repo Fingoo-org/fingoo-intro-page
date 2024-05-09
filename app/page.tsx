@@ -7,7 +7,9 @@ import TeamCeo from "@/public/images/team-ceo.png";
 import TeamDev from "@/public/images/team-dev.png";
 import TeamMarket from "@/public/images/team-market.png";
 import Contact from "@/public/images/contact-us.png";
+import AiPoint from "@/public/images/ai-point.png";
 import Link from "next/link";
+import LinkButton from "./link-button";
 
 export default function Home() {
   return (
@@ -15,7 +17,9 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center min-h-[95vh] ">
         <header className="w-full py-4  bg-white">
           <nav className="flex h-20  items-center justify-between max-w-5xl px-4 mx-auto">
-            <Image src={Logo} alt="logo" height={55} />
+            <Link href="#">
+              <Image src={Logo} alt="logo" height={55} />
+            </Link>
             <div className="flex space-x-4">
               <Button variant="ghost">
                 <Link href="#intro">Introduction</Link>
@@ -24,7 +28,9 @@ export default function Home() {
                 <Link href="#team">Team</Link>
               </Button>
               <Button variant="ghost">
-                <Link href="#funding">Crowd Funding</Link>
+                <Link href="https://link.tumblbug.com/IYCIxg52rJb">
+                  Crowd Funding
+                </Link>
               </Button>
               <Button variant="ghost">
                 <Link href="#contact">Connect Us</Link>
@@ -32,16 +38,26 @@ export default function Home() {
             </div>
           </nav>
         </header>
-        <main className="flex flex-col items-center justify-center flex-1 px-4 text-white bg-[#6CCABF] w-dvw">
+        <main
+          id=""
+          className="flex flex-col items-center justify-center flex-1 px-4 text-white bg-[#6CCABF] w-dvw"
+        >
           <div className="container mx-auto grid grid-cols-[2fr_5fr] gap-10 py-20">
             <div className="space-y-4 flex flex-col justify-center">
-              <h1 className="text-4xl font-bold text-white">
-                나만의 투자분석 최고
-              </h1>
-              <p className="text-white">Beta 버전 이용하러 가기</p>
-              <Button className="bg-white text-[#00B4AA]" variant="secondary">
-                Get started
-              </Button>
+              <div className="relative w-fit">
+                <h1 className="text-4xl font-bold text-white drop-shadow-md pb-2">
+                  <span className="text-black">나만의</span> 투자분석
+                  <span className="text-black"> 친구</span>
+                </h1>
+                <Image
+                  className="absolute top-0 right-0 translate-x-full -translate-y-2/4"
+                  src={AiPoint}
+                  alt={"AI 강조"}
+                />
+              </div>
+              <LinkButton href={"https://link.tumblbug.com/IYCIxg52rJb"}>
+                Beta 버전 이용하러 가기
+              </LinkButton>
             </div>
             <div>
               <Image src={Hero} alt="hero" sizes="100vw" />
