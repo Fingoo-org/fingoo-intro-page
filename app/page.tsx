@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="w-max-screen overflow-x-hidden">
       <div className="flex flex-col items-center justify-center min-h-[95vh] ">
-        <header className="w-full py-4  bg-white">
+        <header className="fixed z-10 overflow-hidden top-0 w-full py-4  bg-white">
           <nav className="flex h-20  items-center justify-between max-w-5xl px-4 mx-auto">
             <Link href="#">
               <Image src={Logo} alt="logo" height={55} />
@@ -40,7 +40,7 @@ export default function Home() {
         </header>
         <main
           id=""
-          className="flex flex-col items-center justify-center flex-1 px-4 text-white bg-[#6CCABF] w-dvw"
+          className="mt-10 flex flex-col items-center justify-center flex-1 px-4 text-white bg-[#6CCABF] w-dvw"
         >
           <div className="container mx-auto grid grid-cols-[2fr_5fr] gap-10 py-20">
             <div className="space-y-4 flex flex-col justify-center">
