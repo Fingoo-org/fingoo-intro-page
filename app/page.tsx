@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/button";
 import Image from "next/image";
 import Hero from "@/public/images/hero.png";
-import Logo from "@/public/images/logo.png";
 import Content from "@/public/images/content.png";
 import TeamCeo from "@/public/images/team-ceo.png";
 import TeamDev from "@/public/images/team-dev.png";
@@ -9,35 +8,14 @@ import TeamMarket from "@/public/images/team-market.png";
 import Contact from "@/public/images/contact-us.png";
 import AiPoint from "@/public/images/ai-point.png";
 import Link from "next/link";
-import LinkButton from "./link-button";
+import LinkButton from "./components/link-button";
+import NavBar from "./components/nav-bar";
 
 export default function Home() {
   return (
     <div className="w-max-screen overflow-x-hidden">
       <div className="flex flex-col items-center justify-center min-h-[95vh] ">
-        <header className="fixed z-10 overflow-hidden top-0 w-full py-4  bg-white">
-          <nav className="flex h-20  items-center justify-between max-w-5xl px-4 mx-auto">
-            <Link href="#">
-              <Image src={Logo} alt="logo" height={55} />
-            </Link>
-            <div className="flex space-x-4">
-              <Button variant="ghost">
-                <Link href="#intro">Introduction</Link>
-              </Button>
-              <Button variant="ghost">
-                <Link href="#team">Team</Link>
-              </Button>
-              <Button variant="ghost">
-                <Link href="https://link.tumblbug.com/IYCIxg52rJb">
-                  Crowd Funding
-                </Link>
-              </Button>
-              <Button variant="ghost">
-                <Link href="#contact">Connect Us</Link>
-              </Button>
-            </div>
-          </nav>
-        </header>
+        <NavBar />
         <main
           id=""
           className="mt-10 flex flex-col items-center justify-center flex-1 px-4 text-white bg-[#6CCABF] w-dvw"
