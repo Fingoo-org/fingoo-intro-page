@@ -41,7 +41,7 @@ export default function Home() {
               </LinkButton>
             </div>
             <div>
-              <Image src={Hero} alt="hero" className="w-full" />
+              <Image src={Hero} alt="hero" className="w-auto object-fill" />
             </div>
           </div>
         </main>
