@@ -33,7 +33,10 @@ export default function Home() {
                   alt={"AI 강조"}
                 />
               </div>
-              <LinkButton href={"https://link.tumblbug.com/IYCIxg52rJb"}>
+              <LinkButton
+                className="bg-white text-[#00B4AA]"
+                href={"https://link.tumblbug.com/IYCIxg52rJb"}
+              >
                 Beta 버전 이용하러 가기
               </LinkButton>
             </div>
