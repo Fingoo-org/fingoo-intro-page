@@ -42,15 +42,15 @@ export default function Home() {
           id=""
           className="mt-10 flex flex-col items-center justify-center flex-1 px-4 text-white bg-[#6CCABF] w-dvw"
         >
-          <div className="container mx-auto grid grid-cols-[2fr_5fr] gap-10 py-20">
-            <div className="space-y-4 flex flex-col justify-center">
+          <div className="lg:container mx-auto grid lg:grid-cols-[2fr_5fr] lg:grid-rows-none grid-rows-[1fr_1fr] gap-10 lg:py-20">
+            <div className="space-y-4 flex flex-col justify-center items-center lg:items-stretch">
               <div className="relative w-fit">
-                <h1 className="text-4xl font-bold text-white drop-shadow-md pb-2">
+                <h1 className="lg:text-4xl text-3xl font-bold text-white drop-shadow-md pb-2">
                   <span className="text-black">나만의</span> 투자분석
                   <span className="text-black"> 친구</span>
                 </h1>
                 <Image
-                  className="absolute top-0 right-0 translate-x-full -translate-y-2/4"
+                  className="absolute top-0 right-0 translate-x-full -translate-y-2/4 lg:max-w-16 max-w-12"
                   src={AiPoint}
                   alt={"AI 강조"}
                 />
@@ -60,7 +60,7 @@ export default function Home() {
               </LinkButton>
             </div>
             <div>
-              <Image src={Hero} alt="hero" sizes="100vw" />
+              <Image src={Hero} alt="hero" className="w-full" />
             </div>
           </div>
         </main>
