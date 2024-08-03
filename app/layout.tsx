@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,12 @@ export default function RootLayout({
       <body className={cn(myFont.variable, "font-pretendard", inter.className)}>
         {children}
       </body>
+      <Script
+      async
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7019952761112111`}
+      crossOrigin="anonymous"
+      strategy="afterInteractive"
+    />
     </html>
   );
 }
