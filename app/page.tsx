@@ -49,7 +49,7 @@ export default function Home() {
           <Image
             src={Content}
             alt="content"
-            sizes="56vw"
+            sizes="(max-width: 1200px) 100vw, 56vw"
             style={{
               width: "100%",
               height: "auto",
@@ -60,7 +60,7 @@ export default function Home() {
           <Image
             src={Team}
             alt="Team"
-            sizes="56vw"
+            sizes="(max-width: 1200px) 100vw, 80vw"
             style={{
               width: "100%",
               height: "auto",
