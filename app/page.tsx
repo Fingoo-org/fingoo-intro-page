@@ -2,9 +2,7 @@ import { Button } from "@/app/components/button";
 import Image from "next/image";
 import Hero from "@/public/images/hero.png";
 import Content from "@/public/images/content.png";
-import TeamCeo from "@/public/images/team-ceo.png";
-import TeamDev from "@/public/images/team-dev.png";
-import TeamMarket from "@/public/images/team-market.png";
+import Team from "@/public/images/team.png";
 import Contact from "@/public/images/contact-us.png";
 import AiPoint from "@/public/images/ai-point.png";
 import Link from "next/link";
@@ -51,7 +49,7 @@ export default function Home() {
           <Image
             src={Content}
             alt="content"
-            sizes="56vw"
+            sizes="(max-width: 1200px) 100vw, 56vw"
             style={{
               width: "100%",
               height: "auto",
@@ -60,27 +58,9 @@ export default function Home() {
         </div>
         <div id="team">
           <Image
-            src={TeamCeo}
-            alt="TeamCeo"
-            sizes="56vw"
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-          />
-          <Image
-            src={TeamDev}
-            alt="TeamDev"
-            sizes="56vw"
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-          />
-          <Image
-            src={TeamMarket}
-            alt="TeamDev"
-            sizes="56vw"
+            src={Team}
+            alt="Team"
+            sizes="(max-width: 1200px) 100vw, 80vw"
             style={{
               width: "100%",
               height: "auto",
