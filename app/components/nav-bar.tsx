@@ -55,10 +55,22 @@ export default function NavBar() {
                   Team
                 </LinkButton>
                 <LinkButton
-                  href="https://link.tumblbug.com/IYCIxg52rJb"
+                  href="https://forms.gle/wkSusbbSPcX4u72h6"
                   variant={"ghost"}
                 >
-                  Crowd Funding
+                  Careers
+                </LinkButton>
+                <LinkButton
+                  href="https://forms.gle/LY5YgTPNFotAGsEE7"
+                  variant={"ghost"}
+                >
+                  Join Beta
+                </LinkButton>
+                <LinkButton
+                  href="https://forms.gle/9LYSKyP9L3jccoZo6"
+                  variant={"ghost"}
+                >
+                  Convention
                 </LinkButton>
                 <Button onClick={handleDownloadIR} variant={"ghost"}>
                   Download IR
@@ -78,10 +90,22 @@ export default function NavBar() {
             Team
           </LinkButton>
           <LinkButton
-            href="https://link.tumblbug.com/IYCIxg52rJb"
+            href="https://forms.gle/wkSusbbSPcX4u72h6"
             variant={"ghost"}
           >
-            Crowd Funding
+            Careers
+          </LinkButton>
+          <LinkButton
+            href="https://forms.gle/LY5YgTPNFotAGsEE7"
+            variant={"ghost"}
+          >
+            Join Beta
+          </LinkButton>
+          <LinkButton
+            href="https://forms.gle/9LYSKyP9L3jccoZo6"
+            variant={"ghost"}
+          >
+            Convention
           </LinkButton>
           <Button onClick={handleDownloadIR} variant={"ghost"}>
             Download IR
