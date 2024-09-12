@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/app/components/button";
 import Link from "next/link";
 import Logo from "@/public/images/logo.png";
@@ -14,6 +16,15 @@ import {
 import LinkButton from "./link-button";
 
 export default function NavBar() {
+  const handleDownloadIR = () => {
+    const link = document.createElement("a");
+    link.href = "/docs/fingoo-ir.pdf";
+    link.download = "FINGOO_IR자료_2024년-9월호.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <header className="fixed z-10 overflow-hidden top-0 w-full lg:py-4 py-3  bg-white">
       <nav className="flex lg:h-20 h-8  items-center justify-between max-w-5xl px-4 mx-auto">
@@ -49,6 +60,9 @@ export default function NavBar() {
                 >
                   Crowd Funding
                 </LinkButton>
+                <Button onClick={handleDownloadIR} variant={"ghost"}>
+                  Download IR
+                </Button>
                 <LinkButton href="#contact" variant={"ghost"}>
                   Connect Us
                 </LinkButton>
@@ -69,6 +83,9 @@ export default function NavBar() {
           >
             Crowd Funding
           </LinkButton>
+          <Button onClick={handleDownloadIR} variant={"ghost"}>
+            Download IR
+          </Button>
           <LinkButton href="#contact" variant={"ghost"}>
             Connect Us
           </LinkButton>
