@@ -33,7 +33,7 @@ export default function Home() {
               </div>
               <LinkButton
                 className="bg-white text-[#00B4AA]"
-                href={"https://link.tumblbug.com/IYCIxg52rJb"}
+                href={"https://fingoo.app"}
               >
                 Beta 버전 이용하러 가기
               </LinkButton>
