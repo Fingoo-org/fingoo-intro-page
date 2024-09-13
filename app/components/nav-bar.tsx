@@ -58,7 +58,7 @@ export default function NavBar() {
                   href="https://forms.gle/wkSusbbSPcX4u72h6"
                   variant={"ghost"}
                 >
-                  Careers
+                  Recruitment
                 </LinkButton>
                 <LinkButton
                   href="https://forms.gle/LY5YgTPNFotAGsEE7"
@@ -93,7 +93,7 @@ export default function NavBar() {
             href="https://forms.gle/wkSusbbSPcX4u72h6"
             variant={"ghost"}
           >
-            Careers
+            Recruitment
           </LinkButton>
           <LinkButton
             href="https://forms.gle/LY5YgTPNFotAGsEE7"
