@@ -33,7 +33,8 @@ export default function Home() {
               </div>
               <LinkButton
                 className="bg-white text-[#00B4AA]"
-                href={"https://fingoo.app"}
+                // href={"https://fingoo.app"}
+                href={"https://docs.google.com/forms/d/e/1FAIpQLSeeOG_20ogiatWdQTuRV_OWcV5E6kAqLV-tdpPL5d-cE1eMiw/viewform"}
               >
                 Beta 버전 이용하러 가기
               </LinkButton>
