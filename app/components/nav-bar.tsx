@@ -72,9 +72,15 @@ export default function NavBar() {
                 >
                   Convention
                 </LinkButton>
-                <Button onClick={handleDownloadIR} variant={"ghost"}>
+                <LinkButton
+                  href="https://coherent-beak-abf.notion.site/_-FINGOO-_IR-1911d4287d7480299754e4c8af0fc913"
+                  variant={"ghost"}
+                >
+                  Download IR3
+                </LinkButton>
+                {/* <Button onClick={handleDownloadIR} variant={"ghost"}>
                   Download IR
-                </Button>
+                </Button> */}
                 <LinkButton href="#contact" variant={"ghost"}>
                   Connect Us
                 </LinkButton>
@@ -107,9 +113,15 @@ export default function NavBar() {
           >
             Convention
           </LinkButton>
-          <Button onClick={handleDownloadIR} variant={"ghost"}>
+          <LinkButton
+            href="https://forms.gle/9LYSKyP9L3jccoZo6"
+            variant={"ghost"}
+          >
             Download IR
-          </Button>
+          </LinkButton>
+          {/* <Button onClick={handleDownloadIR} variant={"ghost"}>
+            Download IR
+          </Button> */}
           <LinkButton href="#contact" variant={"ghost"}>
             Connect Us
           </LinkButton>
