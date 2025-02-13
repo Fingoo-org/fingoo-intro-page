@@ -76,7 +76,7 @@ export default function NavBar() {
                   href="https://coherent-beak-abf.notion.site/_-FINGOO-_IR-1911d4287d7480299754e4c8af0fc913"
                   variant={"ghost"}
                 >
-                  Download IR3
+                  Download IR
                 </LinkButton>
                 {/* <Button onClick={handleDownloadIR} variant={"ghost"}>
                   Download IR
@@ -114,7 +114,7 @@ export default function NavBar() {
             Convention
           </LinkButton>
           <LinkButton
-            href="https://forms.gle/9LYSKyP9L3jccoZo6"
+            href="https://coherent-beak-abf.notion.site/_-FINGOO-_IR-1911d4287d7480299754e4c8af0fc913"
             variant={"ghost"}
           >
             Download IR
