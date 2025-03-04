@@ -67,7 +67,8 @@ export default function NavBar() {
                   Join Beta
                 </LinkButton>
                 <LinkButton
-                  href="https://forms.gle/9LYSKyP9L3jccoZo6"
+                  // href="https://forms.gle/9LYSKyP9L3jccoZo6"
+                  href={"https://fingoo.app"}
                   variant={"ghost"}
                 >
                   Convention
@@ -102,7 +103,7 @@ export default function NavBar() {
             Recruitment
           </LinkButton>
           <LinkButton
-            href="https://forms.gle/LY5YgTPNFotAGsEE7"
+            href={"https://fingoo.app"}
             variant={"ghost"}
           >
             Join Beta
