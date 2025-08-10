@@ -1,19 +1,22 @@
 "use client";
 
-import { Button } from "@/app/components/button";
-import Link from "next/link";
-import Logo from "@/public/images/logo.png";
-import Image from "next/image";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "./sheet";
+
+import { Button } from "@/app/components/button";
+import {
+  HamburgerMenuIcon,
+} from "@radix-ui/react-icons";
+import Image from "next/image";
+import Link from "next/link";
 import LinkButton from "./link-button";
+import Logo from "@/public/images/logo.png";
+import Web from "@/public/images/web.png";
 
 export default function NavBar() {
   const handleDownloadIR = () => {
@@ -26,106 +29,104 @@ export default function NavBar() {
   };
 
   return (
-    <header className="fixed z-10 overflow-hidden top-0 w-full lg:py-4 py-3  bg-white">
-      <nav className="flex lg:h-20 h-8  items-center justify-between max-w-5xl px-4 mx-auto">
+    <header className="fixed z-50 top-4 left-0 w-full flex justify-center pointer-events-none">
+      <nav className="pointer-events-auto w-[90%] mx-auto flex lg:h-[75px] h-16 items-center justify-between px-5 shadow-lg rounded-xl bg-white/70 backdrop-blur-lg">
         <Link href="#">
           <Image
             src={Logo}
             alt="logo"
-            className="object-contain w-auto h-8 lg:h-14"
+            className="object-contain w-auto h-8 lg:h-10"
           />
         </Link>
-        <div className="lg:hidden">
+
+        {/* 모바일 메뉴 */}
+        <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size={"icon"}>
-                <HamburgerMenuIcon />
+              <Button variant="ghost" size="icon">
+                <HamburgerMenuIcon className="w-6 h-6" />
               </Button>
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle>Fingoo</SheetTitle>
+                <Image
+                  src={Logo}
+                  alt="logo"
+                  className="object-contain w-auto h-8"
+                />
                 <SheetDescription>나만의 투자분석 친구</SheetDescription>
               </SheetHeader>
               <div className="flex flex-col divide-y *:py-6 mt-4">
-                <LinkButton href="#intro" variant={"ghost"}>
-                  Introduction
-                </LinkButton>
-                <LinkButton href="#team" variant={"ghost"}>
-                  Team
+                <LinkButton href="#">About Us</LinkButton>
+                <LinkButton
+                  href="https://forms.gle/dW6my1QBRT5kdtXD8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Recruit
                 </LinkButton>
                 <LinkButton
-                  href="https://forms.gle/wkSusbbSPcX4u72h6"
-                  variant={"ghost"}
+                  href="https://coherent-beak-abf.notion.site/Our-Team-2401d4287d7480b9ac1dcfb960cfb562?source=copy_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Recruitment
+                  Our Team
                 </LinkButton>
                 <LinkButton
-                  href="https://forms.gle/LY5YgTPNFotAGsEE7"
-                  variant={"ghost"}
+                  href="http://pf.kakao.com/_XQSKn"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Join Beta
+                  고객센터
                 </LinkButton>
                 <LinkButton
-                  // href="https://forms.gle/9LYSKyP9L3jccoZo6"
-                  href={"https://fingoo.app"}
-                  variant={"ghost"}
+                  href="https://fingoo.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Convention
-                </LinkButton>
-                <LinkButton
-                  href="https://coherent-beak-abf.notion.site/_-FINGOO-_IR-1911d4287d7480299754e4c8af0fc913"
-                  variant={"ghost"}
-                >
-                  Download IR
-                </LinkButton>
-                {/* <Button onClick={handleDownloadIR} variant={"ghost"}>
-                  Download IR
-                </Button> */}
-                <LinkButton href="#contact" variant={"ghost"}>
-                  Connect Us
+                  웹으로 이용
                 </LinkButton>
               </div>
             </SheetContent>
           </Sheet>
         </div>
-        <div className="hidden lg:flex space-x-4">
-          <LinkButton href="#intro" variant={"ghost"}>
-            Introduction
-          </LinkButton>
-          <LinkButton href="#team" variant={"ghost"}>
-            Team
+
+        {/* 데스크탑 메뉴 */}
+        <div className="hidden md:flex space-x-5">
+          <LinkButton href="#">About Us</LinkButton>
+          <LinkButton
+            href="https://forms.gle/dW6my1QBRT5kdtXD8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Recruit
           </LinkButton>
           <LinkButton
-            href="https://forms.gle/wkSusbbSPcX4u72h6"
-            variant={"ghost"}
+            href="https://coherent-beak-abf.notion.site/Our-Team-2401d4287d7480b9ac1dcfb960cfb562?source=copy_link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Recruitment
+            Our Team
           </LinkButton>
           <LinkButton
-            href={"https://fingoo.app"}
-            variant={"ghost"}
+            href="http://pf.kakao.com/_XQSKn"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Join Beta
+            고객센터
           </LinkButton>
-          <LinkButton
-            href="https://forms.gle/9LYSKyP9L3jccoZo6"
-            variant={"ghost"}
+
+          <button
+            onClick={() => window.open("https://fingoo.app", "_blank")}
+            className="inline-flex items-center gap-1 md:gap-2 bg-[#63c8bc] text-white text-lg lg:text-xl font-bold lg:px-4 px-3.5 py-1.5 lg:py-2 rounded-lg transition"
           >
-            Convention
-          </LinkButton>
-          <LinkButton
-            href="https://coherent-beak-abf.notion.site/_-FINGOO-_IR-1911d4287d7480299754e4c8af0fc913"
-            variant={"ghost"}
-          >
-            Download IR
-          </LinkButton>
-          {/* <Button onClick={handleDownloadIR} variant={"ghost"}>
-            Download IR
-          </Button> */}
-          <LinkButton href="#contact" variant={"ghost"}>
-            Connect Us
-          </LinkButton>
+            <Image
+              src={Web}
+              alt="WebLogo"
+              className="object-contain w-auto h-5 lg:h-6"
+            />
+            웹으로 이용
+          </button>
         </div>
       </nav>
     </header>
