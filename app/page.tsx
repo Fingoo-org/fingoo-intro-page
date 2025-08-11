@@ -22,7 +22,7 @@ const TOTAL_FIXED_DISTANCE = SCROLL_THRESHOLD + EXTENDED_HOLD_DISTANCE + EXTRA_H
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
-  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState<number>(0);
   const showScrollTimeout = useRef<NodeJS.Timeout | null>(null);
   const [showScrollIndicator, setShowScrollIndicator] = useState(false);
 
@@ -95,15 +95,19 @@ export default function Home() {
 
   
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
+    if (typeof window !== "undefined") {
+      setWindowWidth(window.innerWidth);
+      window.addEventListener("resize", handleResize);
+      window.addEventListener("scroll", handleScroll, { passive: true });
+    }
     return () => {
-      window.removeEventListener("resize", handleResize);
-      window.removeEventListener("scroll", handleScroll);
-      if (showScrollTimeout.current) clearTimeout(showScrollTimeout.current);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+        window.removeEventListener("scroll", handleScroll);
+      }
     };
   }, [handleResize, handleScroll]);
+
 
   useEffect(() => {
     if (scrollY < 50) {
@@ -174,20 +178,21 @@ export default function Home() {
                           src={GooglePlay_Badge}
                           alt="Google Play Badge"
                           className="object-contain cursor-pointer w-auto h-9 md:h-10 lg:h-9"
-                          onClick={() =>
-                            window.open(
-                              "https://play.google.com/store/apps/details?id=your.app.id",
-                              "_blank"
-                            )
-                          }
+                          onClick={() => {
+                          if (typeof window !== "undefined") {
+                              window.open("https://play.google.com/store/apps/details?id=your.app.id", "_blank");
+                            }
+                          }}
                         />
                         <Image
                           src={App_Store_Badge}
                           alt="App Store Badge"
                           className="object-contain cursor-pointer w-auto h-9 md:h-10 lg:h-9"
-                          onClick={() =>
-                            window.open("https://apps.apple.com/app/your-app-id", "_blank")
-                          }
+                          onClick={() => {
+                          if (typeof window !== "undefined") {
+                              window.open("https://apps.apple.com/app/your-app-id", "_blank")
+                            }
+                          }}
                         />
                       </div>
                       <div className="w-[0.5px] h-full xs:block hidden bg-slate-300" />
