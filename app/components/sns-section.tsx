@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const SnsSection = () => {
   return (
@@ -15,7 +15,7 @@ const SnsSection = () => {
               </h2>
               <div className="aspect-[1/2.1] max-h-[565px] md:aspect-[1/2] w-auto md:min-h-[490px] md:max-h-[535px] xl:min-h-[535px] xl:max-h-[550px] border rounded-md">
                 <iframe
-                  src="https://www.instagram.com/p/DMhyZqJpaN3/embed"
+                  src="https://www.instagram.com/p/DPTkTE1iYhv/embed"
                   className="w-full h-full rounded-xl border-none"
                   allow="autoplay; encrypted-media"
                   allowFullScreen
@@ -36,7 +36,7 @@ const SnsSection = () => {
               <div className="flex-1 w-full flex items-center justify-center">
                 <div className="w-full max-w-[100%] aspect-video">
                   <iframe
-                    src="https://www.youtube.com/embed/S5CCowo6Jzw?si=sPruugOf5azdq9u_"
+                    src="https://www.youtube.com/embed/6N0fyts3uRI?si=mAYiyed_IKKvPd1y"
                     title="YouTube video"
                     className="w-full h-full rounded-xl border-none"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

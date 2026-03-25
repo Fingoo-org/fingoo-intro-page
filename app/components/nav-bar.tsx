@@ -80,7 +80,7 @@ export default function NavBar() {
                   고객센터
                 </LinkButton>
                 <LinkButton
-                  href="https://fingoo.site"
+                  href="https://fingoo.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -117,7 +117,7 @@ export default function NavBar() {
           </LinkButton>
 
           <button
-            onClick={() => window.open("https://fingoo.site", "_blank")}
+            onClick={() => window.open("https://fingoo.app", "_blank")}
             className="inline-flex items-center gap-1 md:gap-2 bg-[#63c8bc] text-white text-lg lg:text-xl font-bold lg:px-4 px-3.5 py-1.5 lg:py-2 rounded-lg transition"
           >
             <Image

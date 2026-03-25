@@ -198,7 +198,7 @@ export default function Home() {
                       <div className="w-[0.5px] h-full xs:block hidden bg-slate-300" />
                       <div className="w-full h-[0.5px] xs:hidden bg-slate-300" />
                       <button
-                        onClick={() => window.open("https://fingoo.site", "_blank")}
+                        onClick={() => window.open("https://fingoo.app", "_blank")}
                         className="inline-flex items-center w-auto md:w-full lg:w-auto justify-center gap-2 bg-[#63c8bc] text-white text-base md:text-lg font-bold px-3 py-1 rounded-lg transition"
                       >
                         <Image
