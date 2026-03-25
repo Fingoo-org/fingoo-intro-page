@@ -25,14 +25,14 @@ const DesktopLayout = () => {
                   <Image
                     src={GooglePlay_Badge}
                     alt="Google Play Badge"
-                    className="object-contain w-auto h-9 md:h-10 lg:h-9"
+                    className="object-contain cursor-pointer w-auto h-9 md:h-10 lg:h-9"
                     onClick={() => window.open("https://play.google.com/store/apps/details?id=app.fingoo.main", "_blank")}
                   />
                   <div className="block lg:hidden w-[0.5px] md:h-10 lg:h-9 bg-slate-300" />
                   <Image
                     src={App_Store_Badge}
                     alt="App Store Badge"
-                    className="object-contain w-auto h-9 md:h-10 lg:h-9"
+                    className="object-contain cursor-pointer w-auto h-9 md:h-10 lg:h-9"
                     onClick={() => window.open("https://apps.apple.com/kr/app/%ED%95%80%EA%B5%AC-%ED%88%AC%EC%9E%90-%ED%95%99%EC%8A%B5-%EC%8B%9C%EC%9E%91-%ED%88%AC%EC%9E%90-%EB%B6%84%EC%84%9D-ai/id6748242009", "_blank")}
                     
                   />
