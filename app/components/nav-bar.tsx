@@ -14,7 +14,7 @@ import {
   SheetTrigger,
 } from "./sheet";
 import { Button } from "@/app/components/button";
-import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { getLenis } from "@/hooks/use-gsap";
 
 export default function NavBar() {
@@ -146,14 +146,10 @@ export default function NavBar() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="text-white hover:text-fingoo-main hover:bg-white/10 transition-all duration-300"
+                  className={`${scrolled ? 'text-white' : 'text-neutral-900'} hover:text-fingoo-main hover:bg-white/10 transition-all duration-300`}
                   aria-label="메뉴 열기"
                 >
-                  {isMobileMenuOpen ? (
-                    <Cross1Icon className="w-6 h-6" />
-                  ) : (
-                    <HamburgerMenuIcon className="w-6 h-6" />
-                  )}
+                  <HamburgerMenuIcon className="w-6 h-6" />
                 </Button>
               </SheetTrigger>
               <SheetContent
@@ -232,10 +228,10 @@ export default function NavBar() {
                     href="http://pf.kakao.com/_XQSKn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 px-4 py-3 bg-fingoo-main/20 rounded-xl text-fingoo-main hover:bg-fingoo-main/30 transition-all duration-300"
+                    className="flex items-center gap-3 px-4 py-3 bg-[#FFC000]/20 rounded-xl text-[#FFE066] hover:bg-[#FFC000]/30 transition-all duration-300"
                   >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.95 0 1.86-.15 2.73-.42l-2.18-6.35c-.32.09-.66-.14-1-.14H9.45c-.55 0-1 .45-1 1v2c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1h2.45c.34 0 .68-.05 1-.14l2.18-6.35c.87.27 1.78.27 2.73.42 2.73.42zM9.5 7.5c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5zm5 0c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5z"/>
+                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 3C6.48 3 2 6.48 2 10.5c0 2.5 1.5 4.7 3.8 6.1L5 19l3.5-1.4c1.1.4 2.3.6 3.5.6 5.52 0 10-3.48 10-7.5S17.52 3 12 3z"/>
                     </svg>
                     <span className="font-medium">카카오톡 상담</span>
                   </a>

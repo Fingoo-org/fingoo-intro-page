@@ -1,4 +1,16 @@
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
-  
+
+html, body {
+  scrollbar-gutter: stable;
+}
+
+/* Radix scrollLock padding-right 무시 */
+body {
+  padding-right: 0 !important;
+}
+
+body[data-scroll-locked] {
+  padding-right: 0 !important;
+}
