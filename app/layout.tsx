@@ -4,6 +4,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import Script from "next/script";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(myFont.variable, "font-pretendard", inter.className)}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
       <Script
         async
