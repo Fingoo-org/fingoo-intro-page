@@ -63,8 +63,8 @@ export function CareerSection() {
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">
             FINGOO 팀과 함께 성장하세요
           </h3>
-          <p className="text-neutral-600 mb-12 max-w-2xl mx-auto">
-            핑구는 투자 교육을 더 쉽고 재미있게 만들 기술과 콘텐츠를 만드는 혁신가들을 찾습니다
+          <p className="text-base text-neutral-600 mb-12 max-w-2xl mx-auto">
+            누구나 쉽게 투자를 배울 수 있는 세상을 만들 함께 성장할 동료를 기다립니다.
           </p>
 
           {/* Positions */}

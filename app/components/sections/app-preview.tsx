@@ -193,11 +193,11 @@ export function AppPreview({ openLink }: AppPreviewProps) {
         <div className="max-w-2xl mx-auto text-center">
           <h2
             ref={titleRef}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-800 leading-tight mb-3"
+            className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-800 leading-tight mb-3"
           >
             정보의 홍수 속에서 <span className="text-fingoo-main">핵심만</span>
           </h2>
-          <p className="text-sm text-neutral-600 mb-6">마우스를 움직여보세요</p>
+          <p className="text-xs text-neutral-600 mb-6">마우스를 움직여보세요</p>
 
           <div className="flex justify-center gap-4 mb-6">
             {[

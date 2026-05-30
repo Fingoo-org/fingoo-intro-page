@@ -183,7 +183,7 @@ export function ValueProposition() {
                       <span
                         key={`title-${featureIndex}-${i}`}
                         ref={(el) => { textRefs.current[titleOffset + i] = el; }}
-                        className="text-4xl md:text-6xl lg:text-7xl font-bold text-white inline-block will-change-transform"
+                        className="text-3xl md:text-6xl lg:text-7xl font-bold text-white inline-block will-change-transform"
                       >
                         {char === " " ? "\u00A0" : char}
                       </span>
@@ -198,7 +198,7 @@ export function ValueProposition() {
                       <span
                         key={`desc-${featureIndex}-${i}`}
                         ref={(el) => { descRefs.current[descOffset + i] = el; }}
-                        className="text-lg md:text-xl text-neutral-400 inline-block will-change-transform"
+                        className="text-base md:text-xl text-neutral-400 inline-block will-change-transform"
                       >
                         {char === " " ? "\u00A0" : char}
                       </span>

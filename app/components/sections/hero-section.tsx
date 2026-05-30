@@ -298,7 +298,7 @@ export function HeroSection({ onScrollToFeatures, openLink }: HeroSectionProps) 
           {/* Main Title */}
           <h1
             ref={titleRef}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-neutral-900 leading-[1.05] tracking-tight mb-8"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 leading-[1.1] tracking-tight mb-8"
           >
             나만의 투자분석 친구
             <br />
@@ -306,9 +306,9 @@ export function HeroSection({ onScrollToFeatures, openLink }: HeroSectionProps) 
           </h1>
 
           {/* Description */}
-          <p className="hero-animate text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="hero-animate text-base md:text-xl text-neutral-600 max-w-2xl mx-auto mb-12 leading-relaxed">
             복잡한 경제 뉴스와 재무 데이터를 AI가 분석합니다.
-            <br className="hidden sm:block" />
+            <br className="block" />
             누구나 쉽게, 똑똑하게 투자를 시작할 수 있습니다.
           </p>
 

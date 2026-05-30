@@ -49,10 +49,10 @@ const FeatureItem = ({
         </span>
       </div>
       <div>
-        <h4 className="text-xl font-bold text-white mb-2 group-hover:text-fingoo-main transition-colors">
+        <h4 className="text-lg font-bold text-white mb-2 group-hover:text-fingoo-main transition-colors">
           {title}
         </h4>
-        <p className="text-neutral-400">{description}</p>
+        <p className="text-sm text-neutral-400">{description}</p>
       </div>
     </div>
   );
@@ -144,10 +144,10 @@ export function GamificationSection() {
           <span className="inline-block text-sm font-semibold text-fingoo-main tracking-wider uppercase px-4 py-2 rounded-full bg-fingoo-main/10 mb-6">
             Gamified Learning
           </span>
-          <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-4 mb-4">
+          <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mt-4 mb-4">
             FINGOO와 함께 즐겁게!
           </h3>
-          <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
+          <p className="text-base text-neutral-400 max-w-2xl mx-auto">
             게임형 교육으로 투자 공부를 더 재미있게
           </p>
         </div>

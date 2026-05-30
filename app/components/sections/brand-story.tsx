@@ -241,7 +241,7 @@ export function BrandStory() {
           <span className="inline-block text-sm font-semibold text-fingoo-main tracking-wider uppercase px-4 py-2 rounded-full bg-fingoo-main/10 mb-4 title-animate">
             Brand Story
           </span>
-          <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 title-animate">
+          <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-900 title-animate">
             Fingoo의 이야기
           </h3>
         </div>

@@ -42,7 +42,7 @@ const FeatureCard = ({
   return (
     <div
       ref={cardRef}
-      className="group relative h-[280px] border-2 border-neutral-200 rounded-2xl p-6 hover:border-fingoo-main/50 transition-all duration-300 bg-white shadow-sm overflow-hidden"
+      className="group relative h-[180px] md:h-[220px] lg:h-[280px] border-2 border-neutral-200 rounded-2xl p-6 hover:border-fingoo-main/50 transition-all duration-300 bg-white shadow-sm overflow-hidden"
     >
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-fingoo-main/5 via-transparent to-fingoo-main/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -70,22 +70,22 @@ export function AppFeatures() {
     {
       badge: "AI TUTOR",
       title: "LLM AI 투자 상담",
-      description: "투자 궁금한 건 AI에게 24시간 언제든 물어보세요. 친절하게 답변해드려요",
+      description: "투자 궁금한 건 AI에게 24시간 언제든 물어보세요. 친절하게 답변해드려요.",
     },
     {
       badge: "FLASH CARDS",
       title: "투자 개념 카드 학습",
-      description: "핵심 투자 개념을 카드 형식으로 쉽게 배우고 기억하세요",
+      description: "핵심 투자 개념을 카드 형식으로 쉽게 배우고 기억하세요.",
     },
     {
       badge: "QUIZ GAME",
       title: "주식 용어 맞추기 게임",
-      description: "객관식 퀴즈와 단어 완성 게임으로 배운 개념을 재미있게 복습해요",
+      description: "객관식 퀴즈와 단어 완성 게임으로 배운 개념을 재미있게 복습해요.",
     },
     {
       badge: "RANKING",
       title: "출석 & 랭킹 보상",
-      description: "출석, 학습, 게임으로 경험치를 모아 랭킹을 경쟁하세요. 시즌별 보상이 기다립니다",
+      description: "출석, 학습, 게임으로 경험치를 모아 랭킹을 경쟁하세요. 시즌별 보상이 기다립니다.",
     },
   ];
 
@@ -122,10 +122,10 @@ export function AppFeatures() {
           <span className="inline-block text-sm font-semibold text-fingoo-main tracking-wider uppercase px-4 py-2 rounded-full bg-fingoo-main/10 mb-6">
             Features
           </span>
-          <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">
+          <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">
             FINGOO가 제공하는 핵심 기능
           </h3>
-          <p className="text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-base text-neutral-600 max-w-2xl mx-auto">
             복잡한 투자 분석을 AI가 쉽게 만들어드려요
           </p>
         </div>
