@@ -26,7 +26,7 @@ export default function Home() {
 
       <HeroSection onScrollToFeatures={handleScrollToFeatures} openLink={openLink} />
       <ValueProposition />
-      <BrandStory />
+      {/* <BrandStory /> */}
       <GamificationSection />
       <AppFeatures />
       <CareerSection />
