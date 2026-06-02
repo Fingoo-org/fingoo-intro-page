@@ -24,8 +24,8 @@ export function ValueProposition() {
       description: "초보부터 고수까지, 레벨에 맞는 커리큘럼과 퀴즈로 투자를 쉽게 배워보세요.",
     },
     {
-      title: "AI 맞춤 종목 추천",
-      description: "AI가 데이터를 분석해서 투자 성향에 맞는 미국 주식을 추천해드려요.",
+      title: "한눈에 보는 금융 데이터",
+      description: "숫자와 뉴스만 나열하지 않아요. AI가 핵심 정보를 차트와 그래프로 정리해 보여드려요.",
     },
     {
       title: "나만의 금융 AI",
