@@ -67,7 +67,7 @@ export function PageFooter() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/fingoo.official" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors">
+                  <a href="https://www.instagram.com/fingoo_official" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors">
                     Instagram
                   </a>
                 </li>
@@ -108,7 +108,7 @@ export function PageFooter() {
               <a href="https://pf.kakao.com/_XQSKn" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 카카오톡
               </a>
-              <a href="https://www.instagram.com/fingoo.official" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <a href="https://www.instagram.com/fingoo_official" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 Instagram
               </a>
             </div>

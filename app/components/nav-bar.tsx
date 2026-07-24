@@ -175,19 +175,6 @@ export default function NavBar() {
                       className="flex items-center justify-between px-4 py-3.5 rounded-xl text-neutral-300 hover:text-white hover:bg-white/10 transition-all duration-300 group"
                     >
                       <span className="font-medium">{link.label}</span>
-                      <svg
-                        className="w-4 h-4 text-neutral-500 group-hover:text-fingoo-main group-hover:translate-x-1 transition-all duration-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
                     </Link>
                   ))}
                 </div>
@@ -200,24 +187,24 @@ export default function NavBar() {
                       href="https://play.google.com/store/apps/details?id=app.fingoo.main"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300"
+                      className="flex items-center justify-center gap-3 py-3 rounded-xl transition-all duration-300"
                     >
                       <Image
                         src={GooglePlay_Badge}
                         alt="Google Play"
-                        className="h-8 w-auto"
+                        className="h-12 w-auto"
                       />
                     </a>
                     <a
                       href="https://apps.apple.com/app/id6748242009"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300"
+                      className="flex items-center justify-center gap-3 py-3 rounded-xl transition-all duration-300"
                     >
                       <Image
                         src={App_Store_Badge}
                         alt="App Store"
-                        className="h-8 w-auto"
+                        className="h-[50px] w-auto"
                       />
                     </a>
                   </div>
@@ -228,7 +215,7 @@ export default function NavBar() {
                     href="http://pf.kakao.com/_XQSKn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 px-4 py-3 bg-[#FFC000]/20 rounded-xl text-[#FFE066] hover:bg-[#FFC000]/30 transition-all duration-300"
+                    className="flex items-center gap-3 px-4 py-3 bg-[#FFC000]/20 rounded-xl text-[#FFE066] hover:bg-[#FFC000]/30 hover:text-white transition-all duration-300"
                   >
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 3C6.48 3 2 6.48 2 10.5c0 2.5 1.5 4.7 3.8 6.1L5 19l3.5-1.4c1.1.4 2.3.6 3.5.6 5.52 0 10-3.48 10-7.5S17.52 3 12 3z"/>
